@@ -3,7 +3,7 @@ const convert = inr => {
     if (isNaN(inr)) { 
         throw "Invalid amount"; 
     } else { 
-        return (inr / EXCHANGE_RATE).toFixed(2); 
+        return (inr / EXCHANGE_RATE).toFixed(0); 
     } 
 } 
 module.exports = convert;
